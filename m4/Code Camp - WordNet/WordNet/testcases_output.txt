@@ -17,21 +17,260 @@ Expected Output:
 13: 6 
 14: 13
 Your Output: 
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13 
+
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -123,107 +362,76 @@ Expected Output:
 6: 7 
 7:
 Your Output: 
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7: 
-
 Multiple roots
+Multiple roots
+Multiple roots
+Multiple roots
+Multiple roots
+Multiple roots
+Multiple roots
+8 vertices, 17 edges 
+0: 7 6 5 4 3 1 
+1: 7 
+2: 7 6 5 4 3 1 
+3: 7 
+4: 7 
+5: 7 
+6: 7 
+7:
 ----------------------------------------
 ########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 Your Output: 
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
-Multiple roots
 6 vertices, 5 edges 
 0: 
 1: 2 0 
 2: 3 
 3: 4 
 4: 5 
-5:
+5: 
+
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5: 
+
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5: 
+
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5: 
+
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5: 
+
+Multiple roots
 ----------------------------------------
 ########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 Your Output: 
-6 vertices, 4 edges 
-0: 1 
-1: 2 
-2: 3 
-3: 
-4: 5 
-5: 
-
+Multiple roots
+Multiple roots
+Multiple roots
 6 vertices, 4 edges 
 0: 1 
 1: 2 
@@ -241,14 +449,6 @@ Your Output:
 5: 
 
 Multiple roots
-Multiple roots
-6 vertices, 4 edges 
-0: 1 
-1: 2 
-2: 3 
-3: 
-4: 5 
-5:
 ----------------------------------------
 ########## Testcase 11: Failed ##########
 Expected Output: 
@@ -288,15 +488,10 @@ Your Output:
 Expected Output: 
 Cycle detected
 Your Output: 
-3 vertices, 2 edges 
-0: 1 
-1: 0 
-2: 
-
-3 vertices, 2 edges 
-0: 1 
-1: 0 
-2: 
-
 Multiple roots
+Multiple roots
+3 vertices, 2 edges 
+0: 1 
+1: 0 
+2:
 ----------------------------------------
