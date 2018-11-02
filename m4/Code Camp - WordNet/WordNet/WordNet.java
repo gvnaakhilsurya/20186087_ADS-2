@@ -7,7 +7,7 @@ public class WordNet {
         int V = processSynsets(synsets);
         dgraph = buildGraph(hypernyms,V);
     }
-    // this only used to count the no.of vertices.
+    // this only used to count
      private int processSynsets(String synsets) {
         In in = new In (synsets);
         int count = 0;
@@ -53,17 +53,17 @@ public class WordNet {
     }
     public void printGraph() {
         int count = 0;
-        for (int i=0 ;i < dgraph.V();i++ ) {
-            if (dgraph.outdegree(i)==0) {
+        for (int i = 0;i < dgraph.V();i++) {
+            if (dgraph.outdegree(i)== 0) {
                 count++;
             }
-        if (!(count == 1)) {
-            System.out.println("Multiple roots");  
+        if (count==1){
+            System.out.println("Multiple roots");
+            
         }else{
-  
-        }
         System.out.println(dgraph);
     }
+        }
     }
 
     // do unit testing of this class
