@@ -47,8 +47,13 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:57:36: '==' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:57:38: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:61: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62:10: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62:10: '}' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62:14: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62:14: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62:14: Must have at least one statement. [EmptyBlock]
 [ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:63: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:69:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:69:29: Parameter args should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:70:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:70:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 56 errors.

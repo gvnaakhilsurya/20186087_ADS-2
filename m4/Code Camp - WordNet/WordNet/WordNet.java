@@ -59,10 +59,11 @@ public class WordNet {
             }
         if (!(count == 1)) {
             System.out.println("Multiple roots");  
-        }
+        }else{
   
         }
         System.out.println(dgraph);
+    }
     }
 
     // do unit testing of this class
