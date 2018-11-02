@@ -57,14 +57,11 @@ public class WordNet {
             if (dgraph.outdegree(i)==0) {
                 count++;
             }
-            if (!(count == 1)) {
-                System.out.println("Multiple roots");
-                
-            }
+        if (!(count == 1)) {
+            System.out.println("Multiple roots");  
+        }
   
         }
-
-
         System.out.println(dgraph);
     }
 
