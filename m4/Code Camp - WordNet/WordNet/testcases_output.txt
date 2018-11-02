@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -17,22 +17,22 @@ Expected Output:
 13: 6 
 14: 13
 Your Output: 
-15 vertices, 28 edges 
+15 vertices, 14 edges 
 0: 
-1: 0 1 
-2: 0 2 
-3: 1 3 
-4: 1 4 
-5: 1 5 
-6: 10 6 
-7: 3 7 
-8: 3 8 
-9: 5 9 
-10: 5 10 
-11: 10 11 
-12: 10 12 
-13: 6 13 
-14: 13 14
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -112,7 +112,7 @@ distance = 4, ancestor = f
 Your Output: 
 
 ----------------------------------------
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -124,38 +124,38 @@ Expected Output:
 6: 7 
 7:
 Your Output: 
-8 vertices, 24 edges 
-0: 7 6 5 4 3 1 0 
-1: 7 1 
-2: 7 6 5 4 3 1 2 
-3: 7 3 
-4: 7 4 
-5: 7 5 
-6: 7 6 
+8 vertices, 17 edges 
+0: 7 6 5 4 3 1 
+1: 7 
+2: 7 6 5 4 3 1 
+3: 7 
+4: 7 
+5: 7 
+6: 7 
 7:
 ----------------------------------------
 ########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 Your Output: 
-6 vertices, 9 edges 
+6 vertices, 5 edges 
 0: 
-1: 2 0 1 
-2: 3 2 
-3: 4 3 
-4: 5 4 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
 5:
 ----------------------------------------
 ########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 Your Output: 
-6 vertices, 8 edges 
-0: 1 0 
-1: 2 1 
-2: 3 2 
+6 vertices, 4 edges 
+0: 1 
+1: 2 
+2: 3 
 3: 
-4: 5 4 
+4: 5 
 5:
 ----------------------------------------
 ########## Testcase 11: Failed ##########
@@ -196,8 +196,8 @@ Your Output:
 Expected Output: 
 Cycle detected
 Your Output: 
-3 vertices, 4 edges 
-0: 1 0 
-1: 0 1 
+3 vertices, 2 edges 
+0: 1 
+1: 0 
 2:
 ----------------------------------------

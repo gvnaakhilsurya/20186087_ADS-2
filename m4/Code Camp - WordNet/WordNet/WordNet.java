@@ -21,7 +21,7 @@ public class WordNet {
         In in = new In(hypernyms);
         while(in.hasNextLine()) {
             String[]tokens = in.readLine().split(",");
-            for (int i = 0;i < tokens.length;i++) {
+            for (int i = 1;i < tokens.length;i++) {
                 dgraph.addEdge(Integer.parseInt(tokens[0]),
                 Integer.parseInt(tokens[i]));
             }
