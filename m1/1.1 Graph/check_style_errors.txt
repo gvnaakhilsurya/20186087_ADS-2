@@ -1,5 +1,72 @@
 Starting audit...
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:5: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:6:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:6:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:7:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:10: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:11:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:12:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:26: Expected @return tag. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:33: Expected @return tag. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:40:21: Parameter item should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:40:26: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:51: Expected @return tag. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:52: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:56: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:57:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:59: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:59:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:60: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:60:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:62:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:65: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 23 errors.
+Starting audit...
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:32: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:34:8: Unused @param tag for 'scan'. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:36:15: Parameter sc should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:36:23: Expected @param tag for 'sc'. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:42:13: 'e' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:54: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:78:25: Parameter v should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:78:29: 'v' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:78:32: Parameter w should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:99:34: Parameter v should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:99:38: 'v' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:113:28: Parameter v should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:113:32: 'v' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:113:35: Parameter w should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 15 errors.
+Starting audit...
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:34:17: Parameter sc should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:37: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:57:25: Parameter v should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:57:29: 'v' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:57:32: Parameter w should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:77:28: Parameter v should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:77:32: 'v' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:77:35: Parameter w should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 9 errors.
+Starting audit...
 [ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 2 errors.
+Starting audit...
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:4: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:8: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:15: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:16:29: Parameter args should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\TestAlgs4.java:17:17: '20' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 8 errors.
