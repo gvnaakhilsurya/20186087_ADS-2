@@ -52,7 +52,6 @@ public class Solution {
 			}
 			
 		}
-		System.out.println(dp);
 		System.out.println(pgrk);
 		// to read the adjacency list from std input
 		// and build the graph
