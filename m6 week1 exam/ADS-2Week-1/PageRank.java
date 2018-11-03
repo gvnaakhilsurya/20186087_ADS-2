@@ -1,20 +1,33 @@
 class PageRank {
-	private LinearProbingHashST<Integer, Bag<Integer>> ht;
-
-	PageRank(Digraph digraph) {
-		 ht = new LinearProbingHashST<Integer, Bag<Integer>>();
-		 
-
+	Digraph d;
+	double[] pageRank;
+	PageRank(Digraph d) {
+		this.d = d;
+		pageRank = new double[d.V()];
+		for (int i = 0; i < pageRank.length; i++) {
+			pageRank[i] = 1.0 / d.V();
+		}
 	}
-	public double getPR(int v) {
-		return 0;
-
+	double getPR(int v) {
+		double p = pageRank[v];
+		//double finalpageRank=0;
+		for(int j = 0; j <= 1000; j++) {
+				for (int i: d.adj(v)) {
+					if(d.outdegree(i)==0) {
+						return 0;
+					}
+					p = pageRank[i]/d.outdegree(i);
+					//finalpageRank+=p;
+				}
+			}
+		return p;
 	}
 	public String toString() {
-		return null;
-
+		String str = "";
+		str += d + "\n";
+		for (int i = 0; i < d.V(); i++) {
+			str += i + " - " + getPR(i) + "\n";
+		}
+		return str;
 	}
-
-
-	
 }
