@@ -83,8 +83,8 @@ class GraphMatrix {
 
     /**
      * display method.
-     * The complexity of the following method is O(E).
-     * where V is the no.of vertices
+     * The complexity of the following method is O(E+V).
+     * where V is the no.of vertices and E is the no.of edges.
      * As the method executes for the iterations of two for loops
      * upto their end values.
      */

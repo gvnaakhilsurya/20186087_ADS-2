@@ -116,6 +116,10 @@ class GraphList {
 
     /**
      * Returns a string representation of the object.
+     * The complexity of the following method is O(E+V).
+     * where V is the no.of vertices and E is the no.of edges.
+     * As the method executes for the iterations of two for loops
+     * upto their end values
      *
      * @return     String representation of the object.
      */
@@ -137,3 +141,6 @@ class GraphList {
         }
     }
 }
+
+
+

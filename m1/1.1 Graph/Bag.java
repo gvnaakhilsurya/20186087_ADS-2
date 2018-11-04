@@ -1,9 +1,16 @@
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
+/**.
+ * Class for bag.
+ *
+ * @param      <Item>  The item
+ */
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
+    /**.
+     * It is the main class for the bag.
+     */
+    private int numofelmnts;         // number of elements in bag
     private Node first;    // beginning of bag
 
     // helper linked list class
@@ -11,41 +18,50 @@ public class Bag<Item> implements Iterable<Item> {
         private Item item;
         private Node next;
     }
-
    /**
      * Create an empty stack.
      */
     public Bag() {
         first = null;
-        N = 0;
+        numofelmnts = 0;
     }
 
    /**
      * Is the BAG empty?
+     * By the analysis the time complexity of the following method
+     * is O(1).As the statment of the method executes only once when
+     * the method calls.
      */
     public boolean isEmpty() {
         return first == null;
     }
 
    /**
+     *By the analysis the time complexity of the following method
+     * is O(1).As the statment of the method executes only once when
+     * the method calls.
      * Return the number of items in the bag.
      */
     public int size() {
-        return N;
+        return numofelmnts;
     }
 
    /**
      * Add the item to the bag.
+     * By the analysis the time complexity of the following method
+     * is O(1).As the statment of the method executes only once when
+     * the method calls.
      */
     public void add(Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        numofelmnts++;
     }
 
-   /**
+   /**By the analysis the time complexity of the following method
+     * is O(N).As the bag class iterates upto the no.of items in the bag.
      * Return an iterator that iterates over the items in the bag.
      */
     public Iterator<Item> iterator()  {
