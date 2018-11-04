@@ -16,7 +16,6 @@ public final class Solution {
      * inputs from the input files and then converted into
      * the tokens and then send as parameters to the spcified
      * methods of the classes.
-     * 
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
