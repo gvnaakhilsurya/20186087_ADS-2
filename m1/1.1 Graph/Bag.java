@@ -31,6 +31,7 @@ public class Bag<Item> implements Iterable<Item> {
      * By the analysis the time complexity of the following method
      * is O(1).As the statment of the method executes only once when
      * the method calls.
+     * @return boolen value.
      */
     public boolean isEmpty() {
         return first == null;
@@ -41,6 +42,7 @@ public class Bag<Item> implements Iterable<Item> {
      * is O(1).As the statment of the method executes only once when
      * the method calls.
      * Return the number of items in the bag.
+     * @ return int value.
      */
     public int size() {
         return numofelmnts;
@@ -51,6 +53,7 @@ public class Bag<Item> implements Iterable<Item> {
      * By the analysis the time complexity of the following method
      * is O(1).As the statment of the method executes only once when
      * the method calls.
+     * 
      */
     public void add(Item item) {
         Node oldfirst = first;
@@ -63,6 +66,7 @@ public class Bag<Item> implements Iterable<Item> {
    /**By the analysis the time complexity of the following method
      * is O(N).As the bag class iterates upto the no.of items in the bag.
      * Return an iterator that iterates over the items in the bag.
+     * @return items of the specifucc object types
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
@@ -74,7 +78,6 @@ public class Bag<Item> implements Iterable<Item> {
 
         public boolean hasNext()  { return current != null;                     }
         public void remove()      { throw new UnsupportedOperationException();  }
-
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
