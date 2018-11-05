@@ -1,87 +1,127 @@
+/*************************************************************************
+ *  Compilation:  javac Bag.java
+ *  Execution:    java Bag < input.txt
+ *
+ *  A generic bag or multiset, implemented using a linked list.
+ *
+ *************************************************************************/
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-/**.
+
+/**
  * Class for bag.
  *
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-    /**.
-     * It is the main class for the bag.
+    /**
+     * number of elements in bag.
      */
-    private int numofelmnts;         // number of elements in bag
-    private Node first;    // beginning of bag
+    private int n;
+    /**
+     * beginning of bag.
+     */
+    private Node first;
 
-    // helper linked list class
+    /**
+     * Class for node.
+     */
     private class Node {
+        /**
+         * { var_description }.
+         */
         private Item item;
+        /**
+         * { var_description }.
+         */
         private Node next;
     }
-   /**
-     * Create an empty stack.
-     */
+
+    /**
+      * Create an empty stack.
+      */
     public Bag() {
         first = null;
-        numofelmnts = 0;
+        n = 0;
     }
 
-   /**
-     * Is the BAG empty?
-     * By the analysis the time complexity of the following method
-     * is O(1).As the statment of the method executes only once when
-     * the method calls.
-     * @return boolen value.
-     */
+    /**
+      * Is the BAG empty?
+      *
+      * @return     True if empty, False otherwise.
+      */
     public boolean isEmpty() {
         return first == null;
     }
 
-   /**
-     *By the analysis the time complexity of the following method
-     * is O(1).As the statment of the method executes only once when
-     * the method calls.
-     * Return the number of items in the bag.
-     * @ return int value.
-     */
+    /**
+      * Return the number of items in the bag.
+      *
+      * @return     { description_of_the_return_value }.
+      */
     public int size() {
-        return numofelmnts;
+        return n;
     }
 
-   /**
-     * Add the item to the bag.
-     * By the analysis the time complexity of the following method
-     * is O(1).As the statment of the method executes only once when
-     * the method calls.
-     * 
-     */
-    public void add(Item item) {
+    /**
+      * Add the item to the bag.
+      *
+      * @param      item  The item.
+      */
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        numofelmnts++;
+        n++;
     }
 
-   /**By the analysis the time complexity of the following method
-     * is O(N).As the bag class iterates upto the no.of items in the bag.
-     * Return an iterator that iterates over the items in the bag.
-     * @return items of the specifucc object types
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
      */
-    public Iterator<Item> iterator()  {
-        return new ListIterator();  
+    public Iterator<Item> iterator() {
+        return new ListIterator();
     }
 
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
+        /**
+         * current Node.
+         */
         private Node current = first;
 
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        /**
+         * { function_description }.
+         */
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+        /**
+         * { function_description }.
+         *
+         * @return     { description_of_the_return_value }.
+         */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
