@@ -16,9 +16,11 @@ class PageRank {
 				for (int i: d.adj(v)) {
 					if(d.outdegree(i)==0) {
 						return 0;
-					}
+					}else{
 					p = pageRank[i]/d.outdegree(i);
 					//finalpageRank+=p;
+				}
+				
 				}
 			}
 		return p;
