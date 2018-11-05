@@ -1,55 +1,33 @@
 Starting audit...
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:3:13: Variable 'dgraph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:6:20: Parameter synsets should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:6:36: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:7:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:8:39: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:11:6: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:11:33: Parameter synsets should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:12:24: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:14:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:20:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:20:32: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:20:49: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:20:49: Parameter V should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:20:53: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:21:17: 'dgraph' hides a field. [HiddenField]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:23:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:25:28: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:25:46: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:29: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:35:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'nouns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'nouns' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:40:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'isNoun' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'isNoun' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:40:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:40:27: Parameter word should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:45:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:45:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:45:25: Parameter nounA should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:45:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:49: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:51:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:51:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:51:23: Parameter nounA should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:51:37: Parameter nounB should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:54:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'printGraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'printGraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:54:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:56:24: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:56:39: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:57:36: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:60:18: '>' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:60:19: '>' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:60:21: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:62: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:63:10: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:63:10: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:63:14: 'else' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:63:14: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:70:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m4\Code Camp - WordNet\WordNet\WordNet.java:70:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 52 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Files to process must be specified, found 0.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
