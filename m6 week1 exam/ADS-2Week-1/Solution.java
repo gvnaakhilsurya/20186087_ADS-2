@@ -10,11 +10,10 @@ class PageRank {
 		}
 	}
 	double getPR(int v) {
-		Digraph rev = d.reverse();
 		double p = pageRank[v];
 		//double finalpageRank=0;
 		for(int j = 0; j <= 1000; j++) {
-				for (int i: rev.adj(v)) {
+				for (int i: d.adj(v)) {
 					if(d.outdegree(i)==0) {
 						return 0;
 					}
