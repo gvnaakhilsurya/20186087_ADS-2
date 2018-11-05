@@ -8,7 +8,7 @@ class GraphMatrix {
      */
     private String[] tokens;
     /**
-     * array declaration.
+     * 2d array declaration.
      */
     private int[][] matrix;
     /**
@@ -28,20 +28,17 @@ class GraphMatrix {
     /**
      * Constructs the object.
      *
-     * @param      sc  The scan
+     * @param      scan  The scan
      */
-    GraphMatrix(Scanner sc) {
-        /**
-         * In the follow method we reads the inputs from
-         * the input files and then create a graph. 
-         */
-        this.v = Integer.parseInt(sc.nextLine());
+    GraphMatrix(final Scanner scan) {
+        this.v = Integer.parseInt(scan.nextLine());
         matrix = new int[v][v];
-        int edge = Integer.parseInt(sc.nextLine());
-        tokens = sc.nextLine().split(",");
-        for (int i = 0; i < edge; i++) {
-            String[] inputs = sc.nextLine().split(" ");
-            addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
+        int edge = Integer.parseInt(scan.nextLine());
+        tokens = scan.nextLine().split(",");
+        int i;
+        for (i = 0; i < edge; i++) {
+            String[] input = scan.nextLine().split(" ");
+            addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
         }
     }
 
@@ -50,14 +47,15 @@ class GraphMatrix {
      * The complexity of the following method is O(1).
      * As the statment of the method executes only once for the
      * each method calls.
-     * @param      v    the integer value
-     * @param      w    the integer value
+     *
+     * @param      v1    the int.
+     * @param      w    the int.
      */
-    public void addEdge(int v, int w) {
-        if (v != w) {
-            if (!hasEdge(v, w)) {
-                matrix[v][w] = 1;
-                matrix[w][v] = 1;
+    public void addEdge(final int v1, final int w) {
+        if (v1 != w) {
+            if (!hasEdge(v1, w)) {
+                matrix[v1][w] = 1;
+                matrix[w][v1] = 1;
                 e++;
             }
         }
@@ -68,13 +66,14 @@ class GraphMatrix {
      * The complexity of the following method is O(1).
      * As the statment of the method executes only once for the
      * each method calls.
-     * @param      v    the integer.
-     * @param      w    the integer.
+     *
+     * @param      v1    the int.
+     * @param      w    the int.
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        if (matrix[v][w] == 1) {
+    public boolean hasEdge(final int v1, final int w) {
+        if (matrix[v1][w] == 1) {
             return true;
         }
         return false;
@@ -82,12 +81,14 @@ class GraphMatrix {
 
     /**
      * display method.
-     * The complexity of the following method is O(E+V).
-     * where V is the no.of vertices and E is the no.of edges.
+     * The complexity of the following method is O(E).
+     * where V is the no.of vertices
      * As the method executes for the iterations of two for loops
      * upto their end values.
+     *
+     * @return     String representation of the object.
      */
-    public void print() {
+    public String toString() {
         String str = "";
         str += v + " vertices, " + e + " edges" + "\n";
         if (e > 0) {
@@ -102,5 +103,6 @@ class GraphMatrix {
             str += "No edges";
             System.out.println(str);
         }
+        return str.toString();
     }
 }

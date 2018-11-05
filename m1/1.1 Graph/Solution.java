@@ -28,7 +28,7 @@ public final class Solution {
             break;
         case "Matrix":
             GraphMatrix lisMat = new GraphMatrix(sc);
-            lisMat.print();
+            lisMat.toString();
             break;
         default :
             break;
