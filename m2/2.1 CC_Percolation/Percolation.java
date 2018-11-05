@@ -1,84 +1,124 @@
 /**
- * import java Scanner class.
- */
-import java.util.*;
-/**
  * Class for percolation.
  */
 class Percolation {
-    int openSiteCount;
-    boolean[][] arr;
-    Graph graph;
-    int n;
-
+    /**
+     * {Declaring an object of weighted quick union}.
+     */
+    private Graph uf;
+    /**
+     * {variable n}.
+     */
+    private int n;
+    /**
+     * {Variables size, first, last, count}.
+     */
+    private int size, first, last, count;
+    /**
+     * {Declaring an integer array of type boolean}.
+     */
+    private boolean[] connected;
     /**
      * Constructs the object.
-     * @param      n     integer value.
+     *
+     * @param      n1    The n1
      */
-    public Percolation(int n) {
-        this.n = n;
-        arr = new boolean[n][n];
-        graph = new Graph((n)*(n) + 2);
-   }
-
-   /**
-    * 
-    *By the analysis the the time constant of the following method
-    *is O(1).
-    *The statment of the method executes only once when the method calls.
-    * @param      i     integer value
-    * @param      j     integer value
-    */
-   public void open(int i, int j) {
-        arr[i][j] = true;
-
-        // Top site.
-        if(i == 0) graph.addEdge(n*n, cal(i,j));
-
-        // Bottom site.
-        if(i == n-1) graph.addEdge(n*n+1, cal(i,j));
-
-        // bottom site
-        if (i < n-1 && arr[i+1][j] == true)
-            graph.addEdge(cal(i, j), cal(i+1, j));
-
-        // top site
-        if (i > 0   && arr[i-1][j] == true)
-            graph.addEdge(cal(i, j), cal(i-1, j));
-
-        // right site
-        if (j < n-1 && arr[i][j+1] == true)
-            graph.addEdge(cal(i, j), cal(i, j+1));
-
-        // left site
-        if (j > 0   && arr[i][j-1] == true)
-            graph.addEdge(cal(i, j), cal(i, j-1));
-   }
-   /**
-    **By the analysis the the time constant of the following method
-    *is O(1).
-    *The statment of the method executes only once when the method calls.
-    *
-    * @param      i    integer value.
-    * @param      j    integer value.
-    *
-    * @return     integer value.
-    */
-   public int cal(int i, int j) {
-        return (n*i)+j;
-   }
-
-   /**
-    *By the analysis the the time constant of the following method
-    *is O(1).
-    *The statment of the method executes only once when the method calls.
-    *
-    * @return    boolean value.
-    */
-   public boolean percolates() {
-        CC cc = new CC(graph);
-        if (cc.connected(n*n, n*n+1))
-            return true;
-        return false;
+    Percolation(final int n1) {
+        this.n = n1;
+        this.size = n1 * n1;
+        this.first = size;
+        this.last = size + 1;
+        this.count = 0;
+        connected = new boolean[size];
+        uf = new Graph(size + 2);
+        for (int i = 0; i < n; i++) {
+            uf.addEdge(first, i);
+            uf.addEdge(last, size - i - 1);
+        }
+    }
+    /**
+     * Searches for the first match.
+     *
+     * @param      i     {row}
+     * @param      j     {column}
+     *
+     * @return     {index value for 1-Dimensional Array}
+     */
+    private int indexOf(final int i, final int j) {
+        return (n * (i - 1)) + (j - 1);
+    }
+    /**
+     * Links open sites.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
+    private void linkOpenSites(final int row, final int col) {
+        if (connected[col] && !uf.hasEdge(row, col)) {
+            uf.addEdge(row, col);
+        }
+    }
+    /**
+     * {Method to open site (row, col) if it is not open already}.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
+    public void open(final int row, final int col) {
+        int index = indexOf(row, col);
+        connected[index] = true;
+        count++;
+        int top = index - n;
+        int bottom = index + n;
+        if (n == 1) {
+            uf.addEdge(first, index);
+            uf.addEdge(first, index);
+        }
+        if (bottom < size) {
+            linkOpenSites(index, bottom);
+        }
+        if (top >= 0) {
+            linkOpenSites(index, top);
+        }
+        if (col == 1) {
+            if (col != n) {
+                linkOpenSites(index, index + 1);
+            }
+            return;
+        }
+        if (col == n) {
+            linkOpenSites(index, index - 1);
+            return;
+        }
+        linkOpenSites(index, index + 1);
+        linkOpenSites(index, index - 1);
+    }
+    /**
+     * Determines if the site is open.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if open, False otherwise.
+     */
+    public boolean isOpen(final int row, final int col) {
+        return connected[indexOf(row, col)];
+    }
+    /**
+     * {Method to determine the number of open sites}.
+     *
+     * @return     {Number of open sites}
+     */
+    public int numberOfOpenSites() {
+        return count;
+    }
+    /**
+     * {Method to determine does the system percolate?}.
+     *
+     * @return     {Boolean value}
+     */
+    public boolean percolates() {
+        ConnectedComponents cc = new ConnectedComponents(uf);
+        return cc.connected(first, last);
     }
 }

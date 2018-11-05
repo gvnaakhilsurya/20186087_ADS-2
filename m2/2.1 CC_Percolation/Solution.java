@@ -1,8 +1,6 @@
 import java.util.Scanner;
 /**
- * @author :gvnaakhilsurya.
- */
-/**
+ *@author:gvnaakhilsurya.
  * Class for solution.
  */
 public final class Solution {
@@ -10,27 +8,23 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-    	/**
-    	 * private counstructor.
-    	 */
+        // Unused Constructor.
     }
     /**
-     * main method to read input.
-     *In the  main method,we can read the input from the
-     * input files gives by the user and split as tokens and
-     * then passes as arguments to the specific method to get
-     * the exact output of the solution.
-     * @param args String
+     * {Client Program}.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int size = Integer.parseInt(scan.nextLine());
-        Percolation percolobj = new Percolation(size);
+        int number = Integer.parseInt(scan.nextLine());
+        Percolation p = new Percolation(number);
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
-            percolobj.open(Integer.parseInt(tokens[0])-1,
-                      Integer.parseInt(tokens[1])-1);
+            int a = Integer.parseInt(tokens[0]);
+            int b = Integer.parseInt(tokens[1]);
+            p.open(a, b);
         }
-        System.out.println(percolobj.percolates());
+        System.out.println(p.percolates() && p.numberOfOpenSites() != 0);
     }
 }
