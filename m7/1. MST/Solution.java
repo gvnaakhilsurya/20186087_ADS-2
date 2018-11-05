@@ -9,7 +9,7 @@ public final class Solution {
    */
   private Solution() {
   /**
-  	* private counstructor.
+  * private counstructor.
   */
   }
   /**
