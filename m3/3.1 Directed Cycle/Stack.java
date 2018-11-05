@@ -1,33 +1,5 @@
-/*************************************************************************
- *  Compilation:  javac Stack.java
- *  Execution:    java Stack < input.txt
- *
- *  A generic stack, implemented using a linked list. Each stack
- *  element is of type Item.
- *  
- *  % more tobe.txt 
- *  to be or not to - be - - that - - - is
- *
- *  % java Stack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- *************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-
-/**
- *  The <tt>Stack</tt> class represents a last-in-first-out (LIFO) stack of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along with methods
- *  for peeking at the top item, testing if the stack is empty, and iterating through
- *  the items in LIFO order.
- *  <p>
- *  All stack operations except iteration are constant time.
- *  <p>
- *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- */
 public class Stack<Item> implements Iterable<Item> {
     private int N;          // size of the stack
     private Node first;     // top of stack
@@ -38,7 +10,7 @@ public class Stack<Item> implements Iterable<Item> {
         private Node next;
     }
 
-   /**
+   /**.
      * Create an empty stack.
      */
     public Stack() {
@@ -46,22 +18,30 @@ public class Stack<Item> implements Iterable<Item> {
         N = 0;
     }
 
-   /**
+   /**.
      * Is the stack empty?
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      */
     public boolean isEmpty() {
         return first == null;
     }
 
-   /**
+   /**.
      * Return the number of items in the stack.
+     * By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      */
     public int size() {
         return N;
     }
 
-   /**
-     * Add the item to the stack.
+   /**.
+    *By the analysis the the time constant of the following method
+    *is O(1).
+    *The statment of the method executes only once when the method calls.
      */
     public void push(Item item) {
         Node oldfirst = first;
@@ -71,7 +51,10 @@ public class Stack<Item> implements Iterable<Item> {
         N++;
     }
 
-   /**
+   /**.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * Delete and return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
      */
@@ -84,8 +67,11 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
 
-   /**
+   /**.
      * Return the item most recently added to the stack.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * Throw an exception if no such item exists because the stack is empty.
      */
     public Item peek() {
@@ -93,7 +79,10 @@ public class Stack<Item> implements Iterable<Item> {
         return first.item;
     }
 
-   /**
+   /**.
+     *By the analysis the the time constant of the following method
+     *is O(N).
+     *As the for loop iterates upto the N values.
      * Return string representation.
      */
     public String toString() {
@@ -104,8 +93,12 @@ public class Stack<Item> implements Iterable<Item> {
     }
        
 
-   /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
+   /**.
+     *The time complexity of the iterator class is the O(N).
+     * As the the it iterates upto the number of items
+     * present in it.
+     * Return an iterator to the stack that iterates through
+     * the items in LIFO order.
      */
     public Iterator<Item> iterator()  { return new ListIterator();  }
 
@@ -122,19 +115,5 @@ public class Stack<Item> implements Iterable<Item> {
             return item;
         }
     }
-
-
-   /**
-     * A test client.
-     */
-/*    public static void main(String[] args) {
-        Stack<String> s = new Stack<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-")) s.push(item);
-            else if (!s.isEmpty()) StdOut.print(s.pop() + " ");
-        }
-        StdOut.println("(" + s.size() + " left on stack)");
-    }*/
 }
 

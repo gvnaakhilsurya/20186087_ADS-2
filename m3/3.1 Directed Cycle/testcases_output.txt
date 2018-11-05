@@ -5,7 +5,7 @@ Cycle doesn't exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -20,7 +20,7 @@ Cycle doesn't exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -35,7 +35,7 @@ Cycle exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -50,7 +50,7 @@ Cycle exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -65,7 +65,7 @@ Cycle exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -80,7 +80,7 @@ Cycle exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -95,7 +95,7 @@ Cycle doesn't exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
@@ -110,7 +110,7 @@ Cycle exists.
 Your Output: 
 Exception in thread "main" java.lang.NoClassDefFoundError: Bag
 	at Digraph.<init>(Digraph.java:45)
-	at Solution.main(Solution.java:9)
+	at Solution.main(Solution.java:22)
 Caused by: java.lang.ClassNotFoundException: Bag
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
