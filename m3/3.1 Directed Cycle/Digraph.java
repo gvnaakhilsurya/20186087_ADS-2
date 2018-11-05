@@ -124,7 +124,7 @@ public class Digraph {
      *By the analysis the the time constant of the following method
      *is O(E*V).V is the total no.of the vertices and E is the edges.
      * In the two forloops, one iterates upto to the V value and another
-     * one is iterates upto E value. 
+     * one is iterates upto E value.
      *
      * @return the reverse of the digraph
      */
