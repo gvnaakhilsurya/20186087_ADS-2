@@ -103,7 +103,7 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * 
+         *
          */
         public void remove() {
             throw new UnsupportedOperationException();
