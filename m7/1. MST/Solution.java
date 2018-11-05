@@ -8,10 +8,9 @@ public final class Solution {
    * Constructs the object.
    */
   private Solution() {
-  	/**
-  	 * private counstructor.
-  	 */
-   
+  /**
+  	* private counstructor.
+  */
   }
   /**
    * Main method.
@@ -36,6 +35,7 @@ public final class Solution {
         System.out.printf("%.5f\n", l.weight());
     }
 }
+
 
 
 
