@@ -1,15 +1,17 @@
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:27: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:43: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:54: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:66: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:80: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Bag.java:108: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
-[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphList.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] H:\20186087_ADS-2\m1\1.1 Graph\GraphMatrix.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

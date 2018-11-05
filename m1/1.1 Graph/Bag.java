@@ -1,14 +1,6 @@
-/*************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *
- *  A generic bag or multiset, implemented using a linked list.
- *
- *************************************************************************/
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 /**
  * Class for bag.
  *
@@ -29,11 +21,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }.
+         * attribute of item type.
          */
         private Item item;
         /**
-         * { var_description }.
+         * attribute of node type
          */
         private Node next;
     }
@@ -48,7 +40,9 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Is the BAG empty?
-      *
+      *By the analysis the the time constant of the following method 
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
       * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
@@ -57,16 +51,21 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the bag.
+      *By the analysis the the time constant of the following method 
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
       *
-      * @return     { description_of_the_return_value }.
+      * @return    integer value
       */
     public int size() {
         return n;
     }
 
     /**
-      * Add the item to the bag.
-      *
+      *Add the item to the bag.
+      *By the analysis the the time constant of the following method 
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
       * @param      item  The item.
       */
     public void add(final Item item) {
@@ -78,9 +77,10 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }.
+     **By the analysis the the time constant of the following method 
+      *is O(N).As the iterator class iterator upto the values in the
+      *bag.
+     * @return     items.
      */
     public Iterator<Item> iterator() {
         return new ListIterator();
@@ -105,16 +105,14 @@ public class Bag<Item> implements Iterable<Item> {
         }
 
         /**
-         * { function_description }.
+         * 
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
 
         /**
-         * { function_description }.
-         *
-         * @return     { description_of_the_return_value }.
+         * @return     next item.
          */
         public Item next() {
             if (!hasNext()) {
@@ -126,3 +124,4 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
+

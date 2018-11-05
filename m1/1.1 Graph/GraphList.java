@@ -72,6 +72,9 @@ class GraphList {
 
     /**
      * Adds an edge.
+     * By the analysis the complexity of the following method
+     * was the O(1).
+     * As the method calls the statment exectes only once.
      *
      * @param      v1    the int.
      * @param      w    the int.
@@ -139,3 +142,4 @@ class GraphList {
         }
     }
 }
+
