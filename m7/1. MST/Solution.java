@@ -36,3 +36,6 @@ public final class Solution {
         System.out.printf("%.5f\n", l.weight());
     }
 }
+
+
+

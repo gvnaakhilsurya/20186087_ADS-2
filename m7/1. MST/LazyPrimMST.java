@@ -97,3 +97,5 @@ public class LazyPrimMST {
         return weight;
     }
 }
+
+
