@@ -1,4 +1,3 @@
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
@@ -24,8 +23,8 @@ public class Bag<Item> implements Iterable<Item> {
          * attribute of item type.
          */
         private Item item;
-        /**
-         * attribute of node type
+        /**.
+         * attribute of node type.
          */
         private Node next;
     }
@@ -40,7 +39,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Is the BAG empty?
-      *By the analysis the the time constant of the following method 
+      *By the analysis the the time constant of the following method
       *is O(1).
       *The statment of the method executes only once when the method calls.
       * @return     True if empty, False otherwise.
@@ -51,7 +50,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the bag.
-      *By the analysis the the time constant of the following method 
+      *By the analysis the the time constant of the following method
       *is O(1).
       *The statment of the method executes only once when the method calls.
       *
@@ -63,7 +62,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       *Add the item to the bag.
-      *By the analysis the the time constant of the following method 
+      *By the analysis the the time constant of the following method
       *is O(1).
       *The statment of the method executes only once when the method calls.
       * @param      item  The item.
@@ -77,7 +76,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     **By the analysis the the time constant of the following method 
+     **By the analysis the the time constant of the following method
       *is O(N).As the iterator class iterator upto the values in the
       *bag.
      * @return     items.
@@ -103,10 +102,6 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext() {
             return current != null;
         }
-
-        /**
-         * 
-         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
@@ -124,4 +119,5 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
+
 
