@@ -35,7 +35,7 @@ final class Solution {
         for (int k = 0; k < cases; k++) {
             String[] item = sc.nextLine().split(" ");
             DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(graph, list.indexOf(item[0]));
-            System.out.println(dsp.distTo(list.indexOf(item[1])));
+            System.out.println(Math.round(dsp.distTo(list.indexOf(item[1]))));
         }
     }
 }
