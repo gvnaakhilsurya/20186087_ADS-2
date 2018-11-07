@@ -338,7 +338,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     }
 
     /**.
-     * 
      *
       *By the analysis the the time constant of the following method
       *is O(N).Here N is the total no.of keys in it.
@@ -409,7 +408,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
 
         /**.
-         * 
          *
          * @return     integer value.
          */

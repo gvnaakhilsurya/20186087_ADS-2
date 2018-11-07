@@ -66,7 +66,7 @@ class DijkstraSP {
      *The statment of the method executes only once when the method calls.
      *
      * @param      e     Edge object e
-     * @param      v     vertex 
+     * @param      v     vertex
      */
     private void relax(final Edge e, final int v) {
         int w = e.other(v);
@@ -147,7 +147,7 @@ class DijkstraSP {
     /**.
      *By the analysis the the time constant of the following method
      *is O().
-     * @param      graph    EdgeWeightedGraph 
+     * @param      graph    EdgeWeightedGraph
      * @param      s     source vertex
      *
      * @return     boolen value.
