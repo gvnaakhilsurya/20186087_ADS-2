@@ -11,8 +11,6 @@ final class Solution {
 
     }
     /**
-     *main method for the program..
-     *complexity is O(E + V)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -34,7 +32,7 @@ final class Solution {
         int cases = Integer.parseInt(sc.nextLine());
         for (int k = 0; k < cases; k++) {
             String[] item = sc.nextLine().split(" ");
-            DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(graph, list.indexOf(item[0]));
+            DijkstraSP dsp = new DijkstraSP(graph, list.indexOf(item[0]));
             System.out.println(Math.round(dsp.distTo(list.indexOf(item[1]))));
         }
     }
