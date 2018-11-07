@@ -7,30 +7,31 @@ import java.util.NoSuchElementException;
  */
 class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     /**.
-     * { var_description }
+     * integer value.
      */
     private int maxN;        // maximum number of elements on PQ
     /**.
-     * { var_description }
+     * integer value.
      */
     private int n;           // number of elements on PQ
     /**.
-     * { var_description }
+     * integer value.
      */
     private int[] pq;        // binary heap using 1-based indexing
     /**.
-     * { var_description }
+     * integer array.
      */
     private int[] qp;        // inverse of pq - qp[pq[i]] = pq[qp[i]] = i
     /**.
-     * { var_description }
+     * keys array of Key type.
      */
     private Key[] keys;      // keys[i] = priority of i
 
     /**.
      * Initializes an empty indexed priority queue with indices between {@code
      * 0} and {@code maxN - 1}.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(N).As N is the total no.of elements in the PQ.
      * @param      maxNum  the keys on this priority queue are index from {@code
      *                     0} {@code maxN - 1}
      * @throws     IllegalArgumentException  if {@code maxN < 0}
@@ -51,7 +52,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Returns true if this priority queue is empty.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
      */
@@ -61,7 +64,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Is {@code i} an index on this priority queue?
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  i an index
      * @return {@code true} if {@code i} is an index on this priority queue;
      *         {@code false} otherwise
@@ -76,7 +81,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Returns the number of keys on this priority queue.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return the number of keys on this priority queue
      */
     public int size() {
@@ -88,6 +95,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
      *
      * @param  i an index
      * @param  key the key to associate with index {@code i}
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      * @throws IllegalArgumentException if there already is an item associated
      *         with index {@code i}
@@ -109,7 +119,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Returns an index associated with a minimum key.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return an index associated with a minimum key
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -123,7 +135,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Returns a minimum key.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return a minimum key
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -211,7 +225,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
 
     /**.
      * Decrease the key associated with index {@code i} to the specified value.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  i the index of the key to decrease
      * @param  key decrease the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
@@ -294,10 +310,12 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     }
 
     /**.
-     * { function_description }
      *
-     * @param      i     { parameter_description }
-     * @param      j     { parameter_description }
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
+     * @param      i     integer value
+     * @param      j     integer value
      */
     private void exch(final int i, final int j) {
         int swap = pq[i];
@@ -307,9 +325,11 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         qp[pq[j]] = j;
     }
     /**.
-     * { function_description }
+      *By the analysis the the time constant of the following method
+      *is O(N).As the N is total no.of keys in it.
+      *The statment of the method executes only once when the method calls.
      *
-     * @param      k     { parameter_description }
+     * @param      k     integer value.
      */
     private void swim(final int k) {
         int key = k;
@@ -320,9 +340,12 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     }
 
     /**.
-     * { function_description }
+     * 
      *
-     * @param      k     { parameter_description }
+      *By the analysis the the time constant of the following method
+      *is O(N).Here N is the total no.of keys in it.
+      *The statment of the method executes only once when the method calls.
+     * @param      k     integer value.
      */
     private void sink(final int k) {
         int key = k;
@@ -388,9 +411,9 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
 
         /**.
-         * { function_description }
+         * 
          *
-         * @return     { description_of_the_return_value }
+         * @return     integer value.
          */
         public Integer next() {
             if (!hasNext()) {

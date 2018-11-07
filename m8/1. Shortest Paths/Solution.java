@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 /**
+ *@author:gvnaakhilsurya.
  * Class for solution.
  */
 final class Solution {
@@ -8,9 +9,18 @@ final class Solution {
      * Constructs the object.
      */
     private Solution() {
-
+      /**
+       * private counstructor.
+       */
     }
     /**
+     *It is thge main method in this we can read the
+     * inputs from the input files and then converted into
+     * the tokens and then send as parameters to the spcified
+     * methods of the classes.
+     * The time complexity of the main method is O(E+V).
+     * As the for loops iterates upto the no.of vertices
+     * and the no.of edges.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

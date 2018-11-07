@@ -3,20 +3,23 @@
  */
 class Edge implements Comparable<Edge> {
     /**.
-     * { var_description }
+     * Integer value.
      */
     private final int v;
     /**.
-     * { var_description }
+     * integer value
      */
     private final int w;
     /**.
-     * { var_description }
+     * double value
      */
     private final double weight;
     /**.
      * Initializes an edge between vertices {@code v} and {@code w} of the
      * given {@code weight}.
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      *
      * @param      vert       The vertical
      * @param      otherVert  The other vertical
@@ -43,7 +46,9 @@ class Edge implements Comparable<Edge> {
 
     /**.
      * Returns the weight of this edge.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return the weight of this edge
      */
     public double weight() {
@@ -52,7 +57,9 @@ class Edge implements Comparable<Edge> {
 
     /**.
      * Returns either endpoint of this edge.
-     *
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * @return either endpoint of this edge
      */
     public int either() {
@@ -62,7 +69,9 @@ class Edge implements Comparable<Edge> {
     /**.
      * Returns the endpoint of this edge that is
      * different from the given vertex.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
      * @throws IllegalArgumentException if the vertex is not one of the
@@ -83,7 +92,9 @@ class Edge implements Comparable<Edge> {
      * Note that {@code compareTo()} is not consistent with {@code equals()},
      * which uses the reference equality implementation
      *                      inherited from {@code Object}.
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  that the other edge
      * @return a negative integer, zero, or positive integer
      *         depending on whether

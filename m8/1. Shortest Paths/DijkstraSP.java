@@ -4,23 +4,24 @@ import java.util.Stack;
  */
 class DijkstraSP {
     /**.
-     * { var_description }
+     * double array.
      */
     private double[] distTo;
     /**.
-     * { var_description }
+     * Edge array.
      */
     private Edge[] edgeTo;
     /**.
-     * { var_description }
+     * Index MinPQ of Double type.
      */
     private IndexMinPQ<Double> pq;
-
     /**.
      * Computes a shortest-paths tree from the
      * source vertex {@code s} to every
      * other vertex in the edge-weighted digraph {@code G}.
-     *
+     *By the analysis the the time constant of the following method
+     *is O(E).
+     *As the for loop iterates upto the total no.of edges present in it.
      * @param      graph  The graph
      * @param      s      the source vertex
      * @throws     IllegalArgumentException  if an edge weight is negative
@@ -60,10 +61,12 @@ class DijkstraSP {
 
     // relax edge e and update pq if changed
     /**.
-     * { function_description }
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      *
-     * @param      e     { parameter_description }
-     * @param      v     { parameter_description }
+     * @param      e     Edge object e
+     * @param      v     vertex 
      */
     private void relax(final Edge e, final int v) {
         int w = e.other(v);
@@ -81,6 +84,9 @@ class DijkstraSP {
     /**.
      * Returns the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v}.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  v the destination vertex
      * @return the length of a shortest path from the
      * source vertex {@code s} to vertex {@code v};
@@ -94,7 +100,9 @@ class DijkstraSP {
 
     /**.
      * Returns true if there is a path from the source vertex to vertex
-     *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @param  v the destination vertex
      * @return {@code true} if there is a path from the source vertex
      *         {@code s} to vertex {@code v}; {@code false} otherwise
@@ -108,6 +116,9 @@ class DijkstraSP {
     /**.
      * Returns a shortest path from the source vertex to vertex
      *
+     *By the analysis the the time constant of the following method
+     *is O(E).As E is the total no.of edges present.
+     *The for loop iterates all the values of  the edges present in it.
      * @param  v the destination vertex
      * @return a shortest path from the source vertex to other vertex
      *         as an iterable of edges, and {@code null} if no such path
@@ -134,12 +145,12 @@ class DijkstraSP {
     // (ii) for all edge e on the SPT:
     // distTo[e.to()] == distTo[e.from()] + e.weight()
     /**.
-     * { function_description }
+     *By the analysis the the time constant of the following method
+     *is O().
+     * @param      graph    EdgeWeightedGraph 
+     * @param      s     source vertex
      *
-     * @param      graph     { parameter_description }
-     * @param      s     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return     boolen value.
      */
     private boolean check(final EdgeWeightedGraph graph, final int s) {
         for (Edge e : graph.edges()) {
@@ -198,9 +209,14 @@ class DijkstraSP {
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     /**.
-     * { function_description }
-     *
-     * @param      v     { parameter_description }
+     * It is thge main method in this we can read the
+     * inputs from the input files and then converted into
+     * the tokens and then send as parameters to the spcified
+     * methods of the classes.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
+     * @param      v     vertex.
      */
     private void validateVertex(final int v) {
         int vert = distTo.length;
