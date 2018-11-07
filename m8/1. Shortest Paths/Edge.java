@@ -115,16 +115,6 @@ class Edge implements Comparable<Edge> {
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
     }
-
-    /**.
-     * Unit tests the {@code Edge} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     Edge e = new Edge(12, 34, 5.67);
-    //     System.out.println(e);
-    // }
 }
 
 

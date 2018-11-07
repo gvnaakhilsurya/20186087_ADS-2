@@ -28,7 +28,7 @@ class EdgeWeightedGraph {
       *is O(1).
       *The statment of the method executes only once when the method calls.
       *By the analysis the the time constant of the following method
-      *is O(1).
+      *is O(V).Here V is the total no.of vertices.
       *The statment of the method executes only once when the method calls.
      * @param      v     { parameter_description }
      * @throws     IllegalArgumentException  if {@code V < 0}
@@ -45,27 +45,6 @@ class EdgeWeightedGraph {
             adj[i] = new Bag<Edge>();
         }
     }
-    /**.
-     * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
-     *
-     * @param      graph  The graph
-     */
-    EdgeWeightedGraph(final EdgeWeightedGraph graph) {
-        this(graph.vert());
-        this.edge = graph.edge();
-        for (int v = 0; v < graph.vert(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : graph.adj[v]) {
-                reverse.push(e);
-            }
-            for (Edge e : reverse) {
-                adj[v].add(e);
-            }
-        }
-    }
-
-
     /**
      * Returns the number of vertices in this edge-weighted graph.
      *By the analysis the the time constant of the following method
@@ -183,7 +162,8 @@ class EdgeWeightedGraph {
     /**
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
-     *
+     *By the analysis the the time constant of the following method
+      *is O(E+V).
      * @return the number of vertices <em>V</em>, followed by
      *          the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists of edges
