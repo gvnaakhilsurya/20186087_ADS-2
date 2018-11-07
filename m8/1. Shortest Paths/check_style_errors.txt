@@ -10,8 +10,8 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\20186087_ADS-2\m8\1. Shortest Paths\IndexMinPQ.java:343: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m8\1. Shortest Paths\IndexMinPQ.java:414: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m8\1. Shortest Paths\IndexMinPQ.java:341: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m8\1. Shortest Paths\IndexMinPQ.java:412: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...

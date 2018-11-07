@@ -61,7 +61,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
     public boolean isEmpty() {
         return n == 0;
     }
-
     /**.
      * Is {@code i} an index on this priority queue?
       *By the analysis the the time constant of the following method
@@ -148,7 +147,6 @@ class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer> {
         }
         return keys[pq[1]];
     }
-
     /**.
      * Removes a minimum key and returns its associated index.
      * @return an index associated with a minimum key
