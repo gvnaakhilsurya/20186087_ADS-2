@@ -8,7 +8,7 @@ public class SeamCarver {
 	}
 	// current picture
 	public Picture picture() {
-		return null;
+		return picture;
 	}
 	// width of current picture
 	public int width() {
