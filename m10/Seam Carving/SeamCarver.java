@@ -2,8 +2,8 @@
 public class SeamCarver {
 	Picture picture;
 	// create a seam carver object based on the given picture
-	public SeamCarver(Picture picture) {
-		this.picture = picture;
+	public SeamCarver(Picture picture1) {
+		picture = new Picture(picture1);
 
 	}
 	// current picture
