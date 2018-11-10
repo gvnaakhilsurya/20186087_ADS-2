@@ -33,12 +33,7 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
-			// First is the source and second is the destination.
-			// If the path exists print the distance between them.
-			// Other wise print "No Path Found."
 			String[] items = sc.nextLine().split(" ");
-			boolean flag = true;
 			for (int k = 0; k <items.length; k++) {
             DijkstraSP dsp = new DijkstraSP(graph,Integer.parseInt(items[0]));
              if (dsp.hasPathTo((Integer.parseInt(items[1])))== false) {
@@ -56,6 +51,15 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] objects = sc.nextLine().split(" ");
+			for (int k = 0; k <objects.length; k++) {
+            DijkstraSP dsp = new DijkstraSP(graph,Integer.parseInt(objects[0]));
+            if (dsp.hasPathTo((Integer.parseInt(objects[1])))&&
+            	dsp.hasPathTo((Integer.parseInt(objects[2])))== false){
+            	System.out.println("No Path Found.");
+            }
+            break;
+        }
 			break;
 
 		default:
