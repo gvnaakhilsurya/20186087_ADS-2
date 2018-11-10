@@ -1,11 +1,24 @@
 import java.util.*;
 /**
+ *@author :gvnaakhilsurya.
  * Class for solution.
  */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
-
+		/**
+		 * private Counstructor.
+		 */
 	}
+	/**
+	 * In the main method we are reading the input from the
+	 * user input and split it into the tokens and then send
+	 * as arguments to the various classes andd their objects.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
@@ -61,7 +74,6 @@ public class Solution {
             break;
         }
 			break;
-
 		default:
 			break;
 		}
