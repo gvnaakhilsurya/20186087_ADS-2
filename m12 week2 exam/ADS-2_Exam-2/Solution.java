@@ -38,16 +38,18 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] items = sc.nextLine().split(" ");
+			boolean flag = true;
 			for (int k = 0; k <items.length; k++) {
             DijkstraSP dsp = new DijkstraSP(graph,Integer.parseInt(items[0]));
-
-             if (dsp.hasPathTo((Integer.parseInt(items[k])))== false) {
+             if (dsp.hasPathTo((Integer.parseInt(items[1])))== false) {
              	System.out.println("No Path Found.");
-             	
-             }
+             	}
+             	else{
+             		System.out.println(dsp.distTo(Integer.parseInt(items[1])));
+             	}
+             	break;
         }
 			break;
-
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
 			// First is the source and second is the via is the one where path should pass throuh.

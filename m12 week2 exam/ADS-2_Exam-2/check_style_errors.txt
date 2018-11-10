@@ -31,14 +31,17 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:17:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:27: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:41:44: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:42:51: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:42:44: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:43:51: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:44:61: '==' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:44:61: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:52: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:53: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:46:17: '}' at column 15 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:47:21: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:47:21: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:48: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:55: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 20 errors.
 Starting audit...
 Audit done.
