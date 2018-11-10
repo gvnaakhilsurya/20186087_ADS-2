@@ -1,18 +1,18 @@
-import java.util.*;
-/**
+import java.util.Scanner;
+/**.
  *@author :gvnaakhilsurya.
  * Class for solution.
  */
-public class Solution {
-	/**
+public final class Solution {
+	/**.
 	 * Constructs the object.
 	 */
 	private Solution() {
-		/**
+		/**.
 		 * private Counstructor.
 		 */
 	}
-	/**
+	/**.
 	 * In the main method we are reading the input from the
 	 * user input and split it into the tokens and then send
 	 * as arguments to the various classes andd their objects.
@@ -44,7 +44,6 @@ public class Solution {
 			//Print the Graph Object.
 			System.out.println(graph);
 			break;
-
 		case "DirectedPaths":
 			String[] items = sc.nextLine().split(" ");
 			for (int k = 0; k <items.length; k++) {
