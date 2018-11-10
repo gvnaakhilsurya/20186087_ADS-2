@@ -28,14 +28,16 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:11:32: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:11:45: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:14:63: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:12:32: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:12:45: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:15: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:15:63: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:17:26: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:18: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:27: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\20186087_ADS-2\m12 week2 exam\ADS-2_Exam-2\Solution.java:35: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 Audit done.
