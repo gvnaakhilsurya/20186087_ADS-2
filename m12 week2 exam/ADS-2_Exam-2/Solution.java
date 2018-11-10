@@ -42,7 +42,7 @@ public class Solution {
             DijkstraSP dsp = new DijkstraSP(graph,Integer.parseInt(items[0]));
 
              if (dsp.hasPathTo((Integer.parseInt(items[k])))== false) {
-             	System.out.println("path not found");
+             	System.out.println("No Path Found.");
              	
              }
         }
