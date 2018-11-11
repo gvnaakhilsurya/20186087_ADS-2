@@ -51,7 +51,7 @@ class EdgeWeightedGraph {
       *The statment of the method executes only once when the method calls.
      * @return the number of vertices in this edge-weighted graph
      */
-    public int vert() {
+    public int vertices() {
         return vert;
     }
 
