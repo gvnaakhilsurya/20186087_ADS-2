@@ -1,3 +1,4 @@
+
 /**
  * Class for connected components.
  */
@@ -142,4 +143,3 @@ public class ConnectedComponents {
         }
     }
 }
-

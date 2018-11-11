@@ -1,3 +1,4 @@
+
 /**
  * Class for percolation.
  */
@@ -122,5 +123,3 @@ class Percolation {
         return cc.connected(first, last);
     }
 }
-
-

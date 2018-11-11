@@ -1,9 +1,5 @@
-/**
- * { Program for Bags }.
- */
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 /**
  * Class for bag.
  *
@@ -11,60 +7,66 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * { number of elements in bag }.
+     * number of elements in bag.
      */
     private int n;
     /**
-     * { beginning of bag }.
+     * beginning of bag.
      */
     private Node first;
+
     /**
      * Class for node.
-     * helper linked list class
      */
     private class Node {
         /**
-         * { variable for item }.
+         * attribute of item type.
          */
         private Item item;
-        /**
-         * { variable for next node }.
+        /**.
+         * attribute of node type.
          */
         private Node next;
     }
+
     /**
-     * Constructs the object.
-     * Create an empty stack.
-     */
+      * Create an empty stack.
+      */
     public Bag() {
         first = null;
         n = 0;
     }
 
     /**
-     * Determines if empty.
-     * Is the BAG empty?
-     *
-     * @return     True if empty, False otherwise.
-     */
+      * Is the BAG empty?
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
+      * @return     True if empty, False otherwise.
+      */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-     * { Return the number of items in the bag }.
-     *
-     * @return     { description_of_the_return_value }
-     */
+      * Return the number of items in the bag.
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
+      *
+      * @return    integer value
+      */
     public int size() {
         return n;
     }
 
     /**
-     * { Add the item to the bag }.
-     *
-     * @param      item  The item
-     */
+      *Add the item to the bag.
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
+      * @param      item  The item.
+      */
     public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
@@ -73,13 +75,13 @@ public class Bag<Item> implements Iterable<Item> {
         n++;
     }
 
-
     /**
-     * { Return an iterator that iterates over the items in the bag }.
-     *
-     * @return     { description_of_the_return_value }
+     **By the analysis the the time constant of the following method
+      *is O(N).As the iterator class iterator upto the values in the
+      *bag.
+     * @return     items.
      */
-    public Iterator<Item> iterator()  {
+    public Iterator<Item> iterator() {
         return new ListIterator();
     }
 
@@ -88,9 +90,10 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { variable for current node }.
+         * current Node.
          */
         private Node current = first;
+
         /**
          * Determines if it has next.
          *
@@ -100,15 +103,14 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function for remove }.
+         *
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
+
         /**
-         * { function for next }.
-         *
-         * @return     { description_of_the_return_value }
+         * @return     next item.
          */
         public Item next() {
             if (!hasNext()) {
@@ -120,5 +122,12 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
+
+
+
+
+
+
+
 
 

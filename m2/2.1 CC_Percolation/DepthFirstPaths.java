@@ -1,3 +1,4 @@
+
 /**
  * Class for depth first paths.
  */
@@ -76,6 +77,3 @@ public class DepthFirstPaths {
         }
     }
 }
-
-
-

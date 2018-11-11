@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 /**
  *@author:gvnaakhilsurya.
@@ -12,7 +13,10 @@ public final class Solution {
     }
     /**
      * {Client Program}.
-     *
+     *It is thge main method in this we can read the
+     * inputs from the input files and then converted into
+     * the tokens and then send as parameters to the spcified
+     * methods of the classes.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -28,5 +32,3 @@ public final class Solution {
         System.out.println(p.percolates() && p.numberOfOpenSites() != 0);
     }
 }
-
-
