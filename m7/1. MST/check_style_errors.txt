@@ -9,7 +9,34 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:4: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:6:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:7:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:10: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:11:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:12:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:59: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:62: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:64: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:65: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:66: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:69: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:73: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:74:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:76:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:76:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:76:29: Parameter first should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:76:40: 'first' hides a field. [HiddenField]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:80: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:80:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:81: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:81:35: '{' at column 35 should have line break after. [LeftCurly]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:83:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:84: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\20186087_ADS-2\m7\1. MST\Queue.java:86: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 26 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -13,7 +13,10 @@ public final class Solution {
   */
   }
   /**
-   * Main method.
+   * It is thge main method in this we can read the
+   * inputs from the input files and then converted into
+   * the tokens and then send as parameters to the spcified
+   * methods of the classes.
    *
    * @param      args  The arguments
    */

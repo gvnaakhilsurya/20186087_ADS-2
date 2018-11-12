@@ -1,5 +1,7 @@
 /**
  * Class for lazy primitive mst.
+ * The Time COmplexity of the Lazy Prim's is
+ * O(Elog(E)).
  */
 public class LazyPrimMST {
     /**
@@ -23,6 +25,8 @@ public class LazyPrimMST {
     /**
      * Compute a minimum spanning tree (or forest).
      * of an edge-weighted graph.
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      * @param g the edge-weighted graph
      */
     LazyPrimMST(final EdgeWeightedGraph g) {
@@ -37,8 +41,8 @@ public class LazyPrimMST {
     }
 
     /**
-     * {Private Accessor method of prim}.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(V).As the while loop iterates upto the total no.of iterates V.
      * @param      g     {EdgeWeightedGraph}
      * @param      s     {Vertex}
      */
@@ -66,6 +70,9 @@ public class LazyPrimMST {
     /**
      * {add all edges e incident to v onto pq if the.
      * other endpoint has not yet been scanned}
+     * By the analysis the time complexity of the following method is
+     * O(adj(V)).As the for loop iterates upto the
+     *  total no.of iterates (adj(V)).
      *
      * @param      g     {EdgeWeightedGraph}
      * @param      v     {Vertex}
@@ -81,6 +88,8 @@ public class LazyPrimMST {
     }
 
     /**
+     *By the analysis the time complexity of the following method is
+     * O(E).As the for loop iterates upto the total no.of iterates E.
      * Returns the edges in a minimum spanning tree (or forest).
      * @return the edges in a minimum spanning tree (or forest)
      *  as an iterable of edges
@@ -92,6 +101,8 @@ public class LazyPrimMST {
     /**
      * @return the sum of the edge weights.
      * in a minimum spanning tree (or forest)
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment executes only once when the method calls.
      */
     public double weight() {
         return weight;
