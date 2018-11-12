@@ -1,21 +1,29 @@
-
+/**
+ * By comparing the other sorting methods,3-way Quick
+ * Sort is better than the LSD radix sort and  the MSD
+ * radix sort.Because it takes the less time complexity
+ * and less space complexity compare to the other methods.
+ */
 import java.util.Scanner;
 /**
  * @author : gvnaakhilsurya.
  */
-
 public final class Solution {
-
     /**
      * Constructs the object.
      */
     private Solution() {
-        //unused
+        /**
+         * private Constructor.
+         */
     }
 
     /**
-     * { function_description }.
-     *
+     *In the main method,the input from the user input files
+     *is  taken and split into the tokens and then send as 
+     *arguments to the particular method of classes.The time
+     *complexity of the given method is O(N).As the N is the
+     *total no.of inputs. 
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

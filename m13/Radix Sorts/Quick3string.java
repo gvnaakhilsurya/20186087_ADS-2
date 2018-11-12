@@ -6,16 +6,17 @@ public final class Quick3string {
      * Constructs the object.
      */
     protected Quick3string() {
-        //unused
+        /**
+         * protected counstructor.
+         */
     }
     /**
-     * { var_description }.
+     * integer value.
      */
     private static final int CUTOFF =  15;   // cutoff to insertion sort
-
     /**
+     *The time complexiy of the following method is O().
      * Rearranges the array of strings in ascending order.
-     *
      * @param      a     the array to be sorted.
      */
     public static void sort(final String[] a) {
@@ -23,15 +24,13 @@ public final class Quick3string {
         sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }
-
-
     /**
-     * { function_description }.
-     *
-     * @param      s     { parameter_description }.
-     * @param      d     { parameter_description }.
-     *
-     * @return     { description_of_the_return_value }.
+     *The time complexity of the below method is constant.
+     *As the statment of the method executes only once when
+     *the method calls.
+     * @param      s   String s  
+     * @param      d   integer value.
+     * @return    
      */
     private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
@@ -40,14 +39,13 @@ public final class Quick3string {
         }
         return s.charAt(d);
     }
-
     /**
-     * { function_description }.
-     *
-     * @param      a     { parameter_description }.
+     * @param      a     integer value.
      * @param      lo    The lower.
      * @param      hi    The higher.
-     * @param      d     { parameter_description }.
+     * @param      d     integer value
+     * *The time complexity of the following method is O(N).
+     *As the sort()method is called N times.i.e recursion.
      */
     private static void sort(final String[] a, final int lo, final int hi,
                              final int d) {
@@ -73,7 +71,6 @@ public final class Quick3string {
                 i++;
             }
         }
-
         /**
         * a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
         */
@@ -83,14 +80,13 @@ public final class Quick3string {
         }
         sort(a, gt + 1, hi, d);
     }
-
     /**
-     * { function_description }.
-     *
-     * @param      a     { parameter_description }.
+     *The time complexity of the following method is O(N^2).
+     *As the for loop iterates upto the length of the array.
+     * @param      a     String array.
      * @param      lo    The lower.
      * @param      hi    The higher.
-     * @param      d     { parameter_description }.
+     * @param      d     integer value.
      */
     private static void insertion(final String[] a, final int lo, final int hi,
                                   final int d) {
@@ -100,29 +96,26 @@ public final class Quick3string {
             }
         }
     }
-
-
     /**
-     * { function_description }.
-     *
-     * @param      a     { parameter_description }.
-     * @param      i     { parameter_description }.
-     * @param      j     { parameter_description }.
+     *The time complexity of the following method is Constant.
+     *As the each statment of the method executes only once when
+     *the method calls.
+     * @param      a     String array.
+     * @param      i     integer value.
+     * @param      j     integer value.
      */
     private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
-
     /**
-     * { function_description }.
-     *
-     * @param      v     { parameter_description }.
-     * @param      w     { parameter_description }.
-     * @param      d     { parameter_description }.
-     *
-     * @return     { description_of_the_return_value }.
+     * @param      v   String.  
+     * @param      w   integer value.
+     * @param      d   integer value. 
+     *The time complexity of the following method is O(N).
+     *As the for loop iterates upto the length of the array.
+     * @return     
      */
     private static boolean less(final String v, final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
@@ -136,12 +129,12 @@ public final class Quick3string {
         }
         return v.length() < w.length();
     }
-
     /**
      * Determines if sorted.
-     *
-     * @param      a     { parameter_description }.
-     *
+     *The time complexity of the below method is O(N).
+     *As the for loop iterates upto the total no.of elements
+     *present in the array.
+     * @param      a     String array.
      * @return     True if sorted, False otherwise.
      */
     private static boolean isSorted(final String[] a) {

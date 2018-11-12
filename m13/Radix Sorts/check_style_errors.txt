@@ -1,6 +1,16 @@
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:31: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:33: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:35: Expected @return tag. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:113: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:115: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:118: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:120: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Solution.java:23: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Solution.java:26: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 2 errors.
