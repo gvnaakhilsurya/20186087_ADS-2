@@ -15,8 +15,6 @@ public class SeamCarver {
 	private void initSeamCarver(Picture picture) {
 		this.picture = new Picture(picture);
 		energies = new double[picture.width()][picture.height()];
-		// System.out.println("IN init seam carver");
-		CalculateEnergies();
 
 	}
 	private void CalculateEnergies() {
