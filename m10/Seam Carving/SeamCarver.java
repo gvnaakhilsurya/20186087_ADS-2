@@ -16,13 +16,13 @@ public class SeamCarver {
 		this.picture = new Picture(picture);
 		energies = new double[picture.width()][picture.height()];
 		// System.out.println("IN init seam carver");
-		// CalculateEnergies();
+		CalculateEnergies();
 
 	}
 	private void CalculateEnergies() {
-		for (int i= 0;i < picture.width();i++) {
-			for (int j = 0;j < picture.height();j++) {
-				energies[i][j]=energy(i,j);
+		for (int i= 0;i < picture.height();i++) {
+			for (int j = 0;j < picture.width();j++) {
+				energies[i][j]=energy(j, i);
 			}	
 		}
 	}
