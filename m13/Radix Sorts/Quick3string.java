@@ -28,9 +28,9 @@ public final class Quick3string {
      *The time complexity of the below method is constant.
      *As the statment of the method executes only once when
      *the method calls.
-     * @param      s   String s  
+     * @param      s   String s
      * @param      d   integer value.
-     * @return    
+     * @return integer value.
      */
     private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
@@ -110,12 +110,12 @@ public final class Quick3string {
         a[j] = temp;
     }
     /**
-     * @param      v   String.  
+     * @param      v   String.
      * @param      w   integer value.
-     * @param      d   integer value. 
+     * @param      d   integer value.
      *The time complexity of the following method is O(N).
      *As the for loop iterates upto the length of the array.
-     * @return     
+     * @return   boolen value.
      */
     private static boolean less(final String v, final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
