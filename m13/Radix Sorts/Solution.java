@@ -17,13 +17,12 @@ public final class Solution {
          * private Constructor.
          */
     }
-
     /**
      *In the main method,the input from the user input files
-     *is  taken and split into the tokens and then send as 
+     *is  taken and split into the tokens and then send as
      *arguments to the particular method of classes.The time
      *complexity of the given method is O(N).As the N is the
-     *total no.of inputs. 
+     *total no.of inputs.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
