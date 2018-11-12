@@ -47,7 +47,6 @@ public class Bag<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
-
     /**
       * Return the number of items in the bag.
       *By the analysis the the time constant of the following method
@@ -59,7 +58,6 @@ public class Bag<Item> implements Iterable<Item> {
     public int size() {
         return n;
     }
-
     /**
       *Add the item to the bag.
       *By the analysis the the time constant of the following method

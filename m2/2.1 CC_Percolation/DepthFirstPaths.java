@@ -67,6 +67,9 @@ public class DepthFirstPaths {
     /**
      * @param v the vertex
      *throw an IllegalArgumentException unless.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+      *The statment of the method executes only once when the method calls.
      *{@code 0 <= v < V}
      */
     private void validateVertex(final int v) {
