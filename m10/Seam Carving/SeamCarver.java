@@ -69,7 +69,7 @@ public class SeamCarver {
 			x == picture.width()-1) {
 			return 1000;
 		} else {
-			System.out.println();
+			// System.out.println();
 			double deltaX = CaluculateDeltaX(x,y);
 			double deltaY = CaluculateDeltaY(x,y);
 			return Math.sqrt(deltaX+deltaY);
