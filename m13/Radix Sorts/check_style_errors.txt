@@ -1,8 +1,7 @@
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:162: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m13\Radix Sorts\Quick3string.java:157: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

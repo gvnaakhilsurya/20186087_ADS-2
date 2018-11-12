@@ -1,5 +1,7 @@
+/**
+ * Quick String Class.
+ */
 public final class Quick3string {
-
     /**
      * Constructs the object.
      */
@@ -112,13 +114,6 @@ public final class Quick3string {
         a[i] = a[j];
         a[j] = temp;
     }
-
-    // is v less than w, starting at character d
-    // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
-    // private static boolean less(String v, String w, int d) {
-    //    assert v.substring(0, d).equals(w.substring(0, d));
-    //    return v.substring(d).compareTo(w.substring(d)) < 0;
-    // }
 
     /**
      * { function_description }.
