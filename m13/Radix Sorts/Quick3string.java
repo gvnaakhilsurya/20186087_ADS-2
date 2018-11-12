@@ -153,5 +153,3 @@ public final class Quick3string {
         return true;
     }
 }
-
- 
