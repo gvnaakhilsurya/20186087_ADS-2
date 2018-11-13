@@ -1,35 +1,50 @@
+
+/**.
+ * imports Scanner package
+ */
 import java.util.Scanner;
+/**.
+ * Class for solution.
+ * @author gvnakhilsurya
+ */
+public final class Solution {
+    /**.
+     * Constructs the object for SOlution
+     */
+    private Solution() {
 
-public class Solution {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String[] words = loadWords();
-		for (int i =0;i < words.length;i++) {
-			// System.out.println(words[i]);
-		}
-		//Your code goes here...
-		String input = sc.nextLine();
-		// System.out.println(input);
-		TST<Integer> st = new TST<Integer>();
-		int count =0;
-		for (int i =0;i < words.length;i++) {
-			SuffixArray array = new SuffixArray(words[i]);
-			for (int j = 0; j < array.length(); j++) {
-				st.put(array.select(j), count++);
-			}
-			// st.put(words[i].substring(j),count++);
-			// System.out.println(st.get(words[i]));for (int i =0;i < words.length;i++) {
-			// st.put(words[i],count++);
-		}
-		
-		for (String key : st.keysWithPrefix(input)) {
-			System.out.println(key);
-		}
-	}
-
-	public static String[] loadWords() {
-		In in = new In("/Files/dictionary-algs4.txt");
-		String[] words = in.readAllStrings();
-		return words;
-	}
+    }
+    /**.
+     * main function which performs the operations
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        String[] words = loadWords();
+        //Your code goes here..
+        // for (int i = 0;i < words.length;i++ ) {
+        //  System.out.println(words[i]);
+        // }
+        Scanner scan = new Scanner(System.in);
+        String prefix = scan.nextLine();
+        TST<Integer> tst = new TST<>();
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words[i].length(); j++) {
+                tst.put(words[i].substring(j), j);
+            }
+        }
+        for (String str : tst.keysWithPrefix(prefix)) {
+            System.out.println(str);
+        }
+    }
+    /**.
+     * Loads words.
+     *
+     * @return     { returns words from file }
+     */
+    public static  String[] loadWords() {
+        In in = new In("/Files/dictionary-algs4.txt");
+        String[] words = in.readAllStrings();
+        return words;
+    }
 }
