@@ -161,13 +161,11 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:15:29: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:15:31: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:15:48: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:16: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:17:54: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:18: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:21: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:27:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:21: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:24: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m14\Assignment-1\Solution.java:30:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\20186087_ADS-2\m14\Assignment-1\SuffixArray.java:47: Line has trailing spaces. [RegexpSingleline]

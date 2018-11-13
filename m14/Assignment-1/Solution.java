@@ -13,8 +13,11 @@ public class Solution {
 		TST<Integer> st = new TST<Integer>();
 		int count =0;
 		for (int i =0;i < words.length;i++) {
-			for (int j = 0; j < words[i].length(); j++)
-			st.put(words[i].substring(j),count++);
+			SuffixArray array = new SuffixArray(words[i]);
+			for (int j = 0; j < array.length(); j++) {
+				st.put(array.select(j), count++);
+			}
+			// st.put(words[i].substring(j),count++);
 			// System.out.println(st.get(words[i]));for (int i =0;i < words.length;i++) {
 			// st.put(words[i],count++);
 		}
