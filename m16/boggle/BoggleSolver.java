@@ -27,6 +27,12 @@ public class BoggleSolver {
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
-		return st.get(word);
-	   }
-    }
+
+		if (st.contains(word)== false) {
+			return 0;
+		} else {
+			return st.get(word);
+		}
+	}
+}
+	
