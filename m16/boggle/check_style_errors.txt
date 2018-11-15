@@ -608,16 +608,17 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:23:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:23:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:23:50: Parameter board should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:27: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:28: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:29:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:29:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:29:28: Parameter word should be final. [FinalParameters]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:31:38: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:31:38: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:26: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:30: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:31: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:32:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:32:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:32:28: Parameter word should be final. [FinalParameters]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:34:38: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:34:38: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:41: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 56 errors.
+Checkstyle ends with 57 errors.
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\20186087_ADS-2\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
