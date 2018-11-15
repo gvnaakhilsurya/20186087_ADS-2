@@ -614,9 +614,8 @@ Starting audit...
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:29:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:29:28: Parameter word should be final. [FinalParameters]
 [ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:30:33: '>' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\20186087_ADS-2\m16\boggle\BoggleSolver.java:30:38: Must have at least one statement. [EmptyBlock]
 Audit done.
-Checkstyle ends with 55 errors.
+Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] H:\20186087_ADS-2\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\20186087_ADS-2\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

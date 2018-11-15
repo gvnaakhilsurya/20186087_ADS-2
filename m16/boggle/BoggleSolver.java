@@ -28,6 +28,7 @@ public class BoggleSolver {
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
 		if (st.get(word)> 0) {
+			return st.get(word);
 		}
 		return 0;
 	}
