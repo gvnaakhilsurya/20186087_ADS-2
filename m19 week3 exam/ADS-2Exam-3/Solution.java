@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Solution {
+public class Solution <Key extends Comparable<Key>, Value> {
 
 	// Don't modify this method.
 	public static void main(String[] args) {
@@ -84,20 +84,7 @@ public class Solution {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-// 	public void freq(final String file) {
-// 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
-// 		String[]fwords =In.readStrings(file);
-// 		for (String word1 : fwords) {
-//             int count = 0;
-//             for (String word2 : fwords) {
-//                 if (word1.equals(word2)) {
-//                     count += 1;
-//                 }
-//             }
 
-// 	}
-// }
-// }
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[]fwords =In.readStrings(file);
@@ -116,15 +103,20 @@ public class Solution {
 }
 
 class T9 {
+	
+	private TST tst = new TST();
 
 	public T9(BinarySearchST<String, Integer> st) {
-		// your code goes here
+		
+		for (String key : st.keys()) {
+			tst.put(key,st.get(key));
+		}
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
-		// your code goes here
-		return null;
+		return tst.keysWithPrefix(prefix);
+
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
