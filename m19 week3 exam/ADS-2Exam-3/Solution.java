@@ -101,17 +101,17 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[]fwords =In.readStrings(file);
-		for (String word1 : fwords) {
-            int count = 0;
-            for (String word2 : fwords) {
-                if (word1.equals(word2)) {
-                    count += 1;
-                }
-            }
-            st.put(word1, count);
-        }
+		int length = fwords.length;
+		for(int i = 0; i <length; i++) {
+			if (st.contains(fwords[i].toLowerCase())) {
+				int count = st.get(fwords[i].toLowerCase());
+				st.put(fwords[i].toLowerCase(), count+1);
+			} else {
+				st.put(fwords[i].toLowerCase(), 1);
+			}
+		}
 		return st;
-	}
+    }
 
 }
 
