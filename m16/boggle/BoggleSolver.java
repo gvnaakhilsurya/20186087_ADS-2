@@ -1,41 +1,90 @@
+
+import java.util.Scanner;
+
 public class BoggleSolver {
-	TST<Integer>st = new TST<Integer>();
+    // Initializes the data structure using the given array of strings as the dictionary.
+    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+    private int rows;
+    private int cols;
+    private boolean[][] visited;
+    private final TrieST<Integer> dictTST;
 
-	// Initializes the data structure using the given array of strings as the dictionary.
-	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-	public BoggleSolver(String[] dictionary) {
-		for (int i = 0;i < dictionary.length;i++) {
-			if ((dictionary[i]).length()==3 ||(dictionary[i]).length()==4) {
-				st.put(dictionary[i],1);	
-			}else if ((dictionary[i]).length()==5) {
-				st.put(dictionary[i],2);
-			} else if ((dictionary[i]).length()==6) {
-				st.put(dictionary[i],3);
-			} else if ((dictionary[i]).length()==7) {
-				st.put(dictionary[i],5);
-			} else if ((dictionary[i]).length()>=8) {
-				st.put(dictionary[i],11);
-			} 
-		}
-	}
+    public BoggleSolver(String[] dictionary) {
+        dictTST = new TrieST<Integer>();
+        int[] scores = {0, 0, 0, 1, 1, 2, 3, 5, 11};
+        int count = 0;
+        for (String word : dictionary) {
+            count++;
+            if (word.length() < scores.length)
+                dictTST.put(word, scores[word.length()]);
+            else
+                dictTST.put(word, 11);
+        }
+    }
 
-	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		if (board == null) {
-			throw new IllegalArgumentException("board is null");
-		} 
-		return new Bag<String>();
-	}
+    private boolean isValidWord(String str) {
+        if (str.length() <= 2)
+            return false;
+        return dictTST.contains(str);
+    }
 
-	// Returns the score of the given word if it is in the dictionary, zero otherwise.
-	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
+    private void findWords(BoggleBoard board, int i, int j,
+        SET<String> queue, String sb) {
+        // if (!dictTST.hasPrefix(sb)) {
+        //     return;
+        // }
+        if (isValidWord(sb)) {
+            queue.add(sb);
+        }
+        visited[i][j] = true;
+        for (int row = i - 1; row <= i + 1 && row < rows; row++) {
+            for (int col = j - 1; col <= j + 1 && col < cols; col++) {
+                if (row >= 0 && col >= 0 && !visited[row][col]) {
+                    String newSB = appendChar(sb, board.getLetter(row, col));
+                    findWords(board, row, col, queue, newSB);
+                }
+            }
+        }
+        visited[i][j] = false;
+    }
 
-		if (st.contains(word)== false) {
-			return 0;
-		} else {
-			return st.get(word);
-		}
-	}
+    private String appendChar(String sb, char ch) {
+        if (ch == 'Q') return sb + "QU";
+        return sb + ch;
+    }
+
+    private Iterable<String> findAllWords(BoggleBoard board) {
+
+        rows = board.rows();
+        cols = board.cols();
+
+        visited = new boolean[rows][cols];
+        SET<String> queue = new SET<String>();
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                String sb = appendChar("", board.getLetter(row, col));
+                findWords(board, row, col, queue, sb);
+            }
+        }
+        return queue;
+    }
+
+    // Returns the set of all valid words in the given Boggle board, as an Iterable.
+    public Iterable<String> getAllValidWords(BoggleBoard board) {
+        if (board == null) {
+            throw new IllegalArgumentException("board is null");
+        }
+
+        return findAllWords(board);
+    }
+
+    // Returns the score of the given word if it is in the dictionary, zero otherwise.
+    // (You can assume the word contains only the uppercase letters A through Z.)
+    public int scoreOf(String word) {
+        if (dictTST.get(word) == null)
+            return 0;
+        return dictTST.get(word);
+    }
 }
-	
+
+    
