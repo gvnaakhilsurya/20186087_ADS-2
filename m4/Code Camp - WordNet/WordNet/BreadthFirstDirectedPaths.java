@@ -21,6 +21,8 @@ public class BreadthFirstDirectedPaths {
 
     /**
      * Computes the shortest path from
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      *  {@code s} and every other vertex in graph {@code G}.
      * @param g the digraph
      * @param s the source vertex
@@ -39,6 +41,8 @@ public class BreadthFirstDirectedPaths {
 
     /**
      * Computes the shortest path from
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      * any one of the source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
      * @param g the digraph
@@ -58,8 +62,10 @@ public class BreadthFirstDirectedPaths {
         bfs(g, sources);
     }
     /**
+     *The time complexity of the below method is  O(V+E).
+     *As the E is the total no.of edges and V is the total no.
+     *of vertices and E is the total no.of edges.
      * bfs method.
-     *
      * @param      g    digraph.
      * @param      s    integer variable.
      */
@@ -82,7 +88,9 @@ public class BreadthFirstDirectedPaths {
     }
     /**
      * bfs method.
-     *
+     *By the analysis the time complexity of the following method is
+     * O(E+V).As the V is total no.of the vertices and E is the total
+     * no.of edges.
      * @param      g  digraph.
      * @param      sources  The sources
      */
@@ -110,6 +118,9 @@ public class BreadthFirstDirectedPaths {
     /**
      * Is there a directed path from the
      * source {@code s} (or sources) to vertex {@code v}?
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @param v the vertex
      * @return {@code true} if there is a directed path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -122,6 +133,9 @@ public class BreadthFirstDirectedPaths {
     /**
      * Returns the number of edges in a shortest path from the source {@code s}
      * (or sources) to vertex {@code v}?
+     By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @param v the vertex
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -134,6 +148,8 @@ public class BreadthFirstDirectedPaths {
     /**
      * Returns a shortest path from {@code s} (or sources) to {@code v}, or
      * {@code null} if no such path.
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      * @param v the vertex
      * @return the sequence of vertices on a shortest path, as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -155,7 +171,9 @@ public class BreadthFirstDirectedPaths {
 
     /**
      * validate vertex method.
-     *
+     *By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @param      v   integer variable.
      */
     private void validateVertex(final int v) {
@@ -167,7 +185,8 @@ public class BreadthFirstDirectedPaths {
     }
     /**
      * validate vertices.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      * @param      vertices  The vertices
      */
     private void validateVertices(final Iterable<Integer> vertices) {

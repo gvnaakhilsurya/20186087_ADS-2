@@ -24,6 +24,9 @@ public class SAP {
     }
     /**
      * length.
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      *
      * @param      v    integer variable.
      * @param      w    integer variable.
@@ -36,7 +39,9 @@ public class SAP {
     }
     /**
      * ancestor.
-     *
+     *By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of vertices.Then the
+     * V is total no.of vertices.
      * @param      v  integer variable.
      * @param      w  integer variable.
      *
@@ -58,7 +63,9 @@ public class SAP {
     }
     /**
      * length.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of vertices.Then the
+     * V is total no.of vertices.
      * @param      v   integer variable.
      * @param      w   integer variable.
      *
@@ -70,7 +77,9 @@ public class SAP {
     }
     /**
      * ancestor.
-     *
+     *By the analysis the time complexity of the following method is
+       O(V*V).As the for loop iterates upto the total no.of vertices.Then the
+     * V is total no.of vertices.
      * @param      v   integer variable.
      * @param      w   integer variable.
      *

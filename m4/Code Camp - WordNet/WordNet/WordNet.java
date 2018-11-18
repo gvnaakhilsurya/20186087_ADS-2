@@ -34,7 +34,9 @@ public class WordNet {
     private boolean hasMultipleRoots = false;
     /**
      * Gets the digraph.
-     *
+     *By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @return     The digraph.
      */
     public Digraph getDigraph() {
@@ -42,7 +44,9 @@ public class WordNet {
     }
     /**
      * get hasCycle.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @return   boolean.
      */
     public boolean gethasCycle() {
@@ -50,7 +54,9 @@ public class WordNet {
     }
     /**
      * hasmultipleroots.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @return  boolean.
      */
     public boolean gethasMultipleRoots() {
@@ -102,6 +108,8 @@ public class WordNet {
     }
     /**
      * check multiple roots method.
+     * By the analysis the time complexity of the following method is
+     * O(V).As the for loop iterates upto the total no.of iterates V.
      */
     public void checkMultipleRoots() {
         int roots = 0;
@@ -117,7 +125,9 @@ public class WordNet {
     }
     /**
      * Determines if noun.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @param      word  The word
      *
      * @return     True if noun, False otherwise.
@@ -132,7 +142,9 @@ public class WordNet {
     }
     /**
      * distance.
-     *
+     * By the analysis the time complexity of the following method is
+     * O(1).As the statment of the method executes only once when
+     the method calls.
      * @param      nounA  The noun a
      * @param      nounB  The noun b
      *
