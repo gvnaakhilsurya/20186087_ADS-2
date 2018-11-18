@@ -1,90 +1,133 @@
-
-import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.HashMap;
+/**.
+BoggleSolver class for boggle
+*/
 public class BoggleSolver {
-    // Initializes the data structure using the given array of strings as the dictionary.
-    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-    private int rows;
-    private int cols;
-    private boolean[][] visited;
-    private final TrieST<Integer> dictTST;
-
+    /**.
+    dict the trie dictionary
+    */
+    private Trie<Integer> dict;
+    /**.
+    board the boggleboard object
+    */
+    private BoggleBoard board;
+    /**.
+    map the hashmap for storng the key
+    */
+    private HashMap<String, Integer> map;
+    /**.
+    list for storing the final list of keys
+    */
+    private ArrayList<String> list;
+    /**.
+    @param dictionary the string
+    Complexity is O(l) l is length of dictionary
+    */
     public BoggleSolver(String[] dictionary) {
-        dictTST = new TrieST<Integer>();
-        int[] scores = {0, 0, 0, 1, 1, 2, 3, 5, 11};
-        int count = 0;
-        for (String word : dictionary) {
-            count++;
-            if (word.length() < scores.length)
-                dictTST.put(word, scores[word.length()]);
-            else
-                dictTST.put(word, 11);
+        dict = new Trie<>();
+        for (int i = 0; i < dictionary.length; i++) {
+            dict.put(dictionary[i], getScore(dictionary[i]));
         }
     }
-
-    private boolean isValidWord(String str) {
-        if (str.length() <= 2)
-            return false;
-        return dictTST.contains(str);
-    }
-
-    private void findWords(BoggleBoard board, int i, int j,
-        SET<String> queue, String sb) {
-        // if (!dictTST.hasPrefix(sb)) {
-        //     return;
-        // }
-        if (isValidWord(sb)) {
-            queue.add(sb);
-        }
-        visited[i][j] = true;
-        for (int row = i - 1; row <= i + 1 && row < rows; row++) {
-            for (int col = j - 1; col <= j + 1 && col < cols; col++) {
-                if (row >= 0 && col >= 0 && !visited[row][col]) {
-                    String newSB = appendChar(sb, board.getLetter(row, col));
-                    findWords(board, row, col, queue, newSB);
-                }
-            }
-        }
-        visited[i][j] = false;
-    }
-
-    private String appendChar(String sb, char ch) {
-        if (ch == 'Q') return sb + "QU";
-        return sb + ch;
-    }
-
-    private Iterable<String> findAllWords(BoggleBoard board) {
-
-        rows = board.rows();
-        cols = board.cols();
-
-        visited = new boolean[rows][cols];
-        SET<String> queue = new SET<String>();
-        for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-                String sb = appendChar("", board.getLetter(row, col));
-                findWords(board, row, col, queue, sb);
-            }
-        }
-        return queue;
-    }
-
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
+    /**.
+    @return the return for final list
+    @param board the bogglebpard object
+    Compelxity O(r*c) r:no: of rows, c: no: of cols
+    */
     public Iterable<String> getAllValidWords(BoggleBoard board) {
-        if (board == null) {
-            throw new IllegalArgumentException("board is null");
+        this.board = board;
+        this.map = new HashMap<>();
+        this.list = new ArrayList<>();
+        boolean[][] marked = new boolean[board.rows()][board.cols()];
+        for (int i = 0; i < board.rows(); i++) {
+            for (int j = 0; j < board.cols(); j++) {
+                verifyword(marked, "", i, j, 0);
+            }
         }
-
-        return findAllWords(board);
+        return list;
     }
-
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
-    public int scoreOf(String word) {
-        if (dictTST.get(word) == null)
+    /**.
+    @param array the boolean array for running dfs
+    @param prefix the prefix of the string
+    @param i the row number
+    @param j the column number
+    @param count the number of chars in the string
+    Complexity O(1) : functional called for every cell once,
+    steps are executed for that cell, no loops.
+    */
+    private void verifyword(boolean[][] array, String prefix,
+                            int i,
+                            int j,
+                            int count) {
+        char c = board.getLetter(i, j);
+        if (c == 'Q') {
+            prefix += "QU";
+            count += 2;
+        } else {
+            prefix += c;
+            count += 1;
+        }
+        array[i][j] = true;
+        boolean temp = false;
+        if (dict.contains(prefix)) {
+            temp = true;
+            if (count >= 3 && !map.containsKey(prefix)) {
+                map.put(prefix, getScore(prefix));
+                list.add(prefix);
+            }
+        }
+        if (temp || dict.hasKey(prefix)) {
+            if (j - 1 >= 0 && !array[i][j - 1])
+                verifyword(array, prefix, i, j - 1, count);
+            if (j + 1 < board.cols() && !array[i][j + 1])
+                verifyword(array, prefix, i, j + 1, count);
+            if (i - 1 >= 0) {
+                if (j - 1 >= 0 && !array[i - 1][j - 1])
+                    verifyword(array, prefix, i - 1, j - 1, count);
+                if (!array[i - 1][j])
+                    verifyword(array, prefix, i - 1, j, count);
+                if (j + 1 < board.cols() && !array[i - 1][j + 1])
+                    verifyword(array, prefix, i - 1, j + 1, count);
+            }
+            if (i + 1 < board.rows()) {
+                if (j - 1 >= 0 && !array[i + 1][j - 1])
+                    verifyword(array, prefix, i + 1, j - 1, count);
+                if (!array[i + 1][j])
+                    verifyword(array, prefix, i + 1, j, count);
+                if (j + 1 < board.cols() && !array[i + 1][j + 1])
+                    verifyword(array, prefix, i + 1, j + 1, count);
+            }
+        }
+        array[i][j] = false;
+    }
+    /**.
+    @param word the wrod for scoring
+    Complexity O(1) : score the word appropriately and return
+    @return the return for word score
+    */
+    private int getScore(String word) {
+        if (word.length() <= 2)
             return 0;
-        return dictTST.get(word);
+        if (word.length() == 3 || word.length() == 4)
+            return 1;
+        else if (word.length() == 5)
+            return 2;
+        else if (word.length() == 6)
+            return 3;
+        else if (word.length() == 7)
+            return 5;
+        else
+            return 11;
+    }
+    /**.
+    @param word the word for scoring
+    @return the return for final score
+    Complexity O(1) : finds the score and returns
+    */
+    public int scoreOf(String word) {
+        if (dict.contains(word))
+            return dict.get(word);
+        return 0;
     }
 }
-
-    
