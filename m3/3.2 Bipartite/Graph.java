@@ -34,6 +34,9 @@ public class Graph {
 
     /**
      * Return the number of vertices in the graph.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * @return      {Integer}
      */
     public int vertices() {
@@ -42,6 +45,9 @@ public class Graph {
 
     /**
      * Return the number of edges in the graph.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+      *The statment of the method executes only once when the method calls.
      * @return      {Integer}
      */
     public int edges() {
@@ -61,8 +67,11 @@ public class Graph {
 
     /**
      * Return the list of neighbors of vertex v as in Iterable.
+     *By the analysis the the time constant of the following method
+     *is O(adj(V)).
+     *The statment of the method executes for all values of the adj list.
      * @param      v    {Vertex}
-     * @return     {Iterable}
+     * @return     integer value.
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];

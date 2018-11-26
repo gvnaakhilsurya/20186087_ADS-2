@@ -29,11 +29,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }.
+         * item.
          */
         private Item item;
         /**
-         * { var_description }.
+         * next node.
          */
         private Node next;
     }
@@ -47,8 +47,10 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-      * Is the BAG empty?
-      *
+      *Is the BAG empty?
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
       * @return     True if empty, False otherwise.
       */
     public boolean isEmpty() {
@@ -57,8 +59,10 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the bag.
-      *
-      * @return     { description_of_the_return_value }.
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
+      * @return    integer value.
       */
     public int size() {
         return n;
@@ -66,7 +70,9 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Add the item to the bag.
-      *
+      *By the analysis the the time constant of the following method
+      *is O(1).
+      *The statment of the method executes only once when the method calls.
       * @param      item  The item.
       */
     public void add(final Item item) {
@@ -78,9 +84,12 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     * { function_description }.
+     * 
      *
-     * @return     { description_of_the_return_value }.
+     * @return     items.
+     * **By the analysis the the time constant of the following method
+      *is O(N).As the iterator class iterator upto the values in the
+      *bag.
      */
     public Iterator<Item> iterator() {
         return new ListIterator();

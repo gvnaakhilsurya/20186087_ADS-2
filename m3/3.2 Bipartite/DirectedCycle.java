@@ -3,27 +3,27 @@
  */
 public class DirectedCycle {
     /**
-     * { var_description }.
+     * boolean value.
      */
     private boolean[] marked;
     /**
-     * { var_description }.
+     * integer array.
      */
     private int[] edgeTo;
     /**
-     * { var_description }.
+     * boolean array.
      */
     private boolean[] onStack;
     /**
-     * { var_description }.
+     * stack.
      */
     private Stack<Integer> cycle;
     /**
-     * { var_description }.
+     * integer value.
      */
     private int vertices;
     /**
-     * { var_description }.
+     * boolean value.
      */
     private boolean isbipartite = false;
     /**
@@ -43,10 +43,12 @@ public class DirectedCycle {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @param      graph     { parameter_description }
-     * @param      v     { parameter_description }
+      *By the analysis the the time constant of the following method
+      *is O(E+V)
+      *As E is the total number of edges and V is the total no of vertices
+      *in the Digraph given.
+     * @param      graph   Graph
+     * @param      v     vertex
      */
     private void dfs(final Graph graph, final int v) {
         isbipartite = !isbipartite;
@@ -74,7 +76,10 @@ public class DirectedCycle {
 
     /**
      * Determines if it has cycle.
-     *
+     * Returns a string representation of the object.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
@@ -83,7 +88,10 @@ public class DirectedCycle {
 
     /**
      * Determines if bipartite.
-     *
+     * Returns a string representation of the object.
+     *By the analysis the the time constant of the following method
+     *is O(1).
+     *The statment of the method executes only once when the method calls.
      * @return     True if bipartite, False otherwise.
      */
     public boolean isBipartite() {
