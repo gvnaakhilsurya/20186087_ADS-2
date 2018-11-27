@@ -84,7 +84,6 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     * 
      *
      * @return     items.
      * **By the analysis the the time constant of the following method
